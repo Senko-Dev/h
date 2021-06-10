@@ -1,0 +1,55 @@
+.text-green, .text-green:hover {
+    color: #00b900;
+}
+
+.text-neon, .text-neon:hover {
+    color: #00ff21;
+}
+
+.btn-green {
+    background: #00b900;
+}
+
+.btn-neon, .btn-neon:hover {
+    background: #00ff21;
+}
+
+@keyframes h {
+	from {
+		background-position: 0vh 0vw;
+	}
+
+	to {
+		background-position: -100vh -100vw;
+	}
+}
+
+.hero {
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    /* bg */
+    background-color: black;
+    background-image: url("../images/hero/h.png");
+    background-position: 0vh 0vw;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    animation: h 20s linear infinite;
+    background-size: 2%;
+    color: var(--text);
+    top: 0;
+}
+
+.hero-lg {
+    height: 50vh;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link.active {
+    color: #00ff21 !important;
+}
